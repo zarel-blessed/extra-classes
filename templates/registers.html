@@ -1,0 +1,9 @@
+{% extends "layout.html" %} {% block body %}
+
+<h1>Registers</h1>
+{% for reg in registers %}
+<p><i>{{ reg["name"] }} is registered for {{ reg["class"] }}</i></p>
+{% endfor %}
+<a href="/">Back to home</a>
+
+{% endblock %}
